@@ -28,7 +28,7 @@ void genbreshen(int x1, int y1, int x2, int y2)
 		while(e>=0)
 		{
 			if (exchange==1)
-				x1+=s1;
+				x+=s1;
 			else
 				y+=s2;
 			e=e-(2*dx);
