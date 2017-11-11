@@ -1,4 +1,4 @@
-#include <iostream.h>
+ab#include <iostream.h>
 #include <graphics.h>
 #include <math.h>
 #include <conio.h>
@@ -25,7 +25,7 @@ void DDA(int x0,int y0,int x1,int y1)
 	int x=x0,y=y0;
 	int dy=y1-y0;
 	float xinc,yinc,steps;
-	if(dx>dy)
+	if(abs(dx) > abs(dy))
 		steps=abs(dx);
 	else
 		steps=abs(dy);
