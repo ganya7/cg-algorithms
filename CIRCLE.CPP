@@ -12,31 +12,20 @@ void dcircle(int rad, int cx, int cy)
 	{
 		x++;
 		if(p<0)
-		{
-			putpixel(xc+x,yc+y,RED); //1 oct
-			putpixel(xc+x,yc-y,RED);//8 oct
-			putpixel(xc-x,yc+y,RED);//3 oct
-			putpixel(xc-x,yc-y,RED);//5 oct
-			putpixel(xc+y,yc+x,RED);//2 oct
-			putpixel(xc+y,yc-x,RED);//4 oct
-			putpixel(xc-y,yc+x,RED);//7 oct
-			putpixel(xc-y,yc-x,RED);//6 oct
-
 			p = p + 2*x + 1;
-		}
 		else
 		{
 			y--;
-			putpixel(xc+x,yc+y,RED);
-			putpixel(xc+x,yc-y,RED);
-			putpixel(xc-x,yc+y,RED);
-			putpixel(xc-x,yc-y,RED);
-			putpixel(xc+y,yc+x,RED);
-			putpixel(xc+y,yc-x,RED);
-			putpixel(xc-y,yc+x,RED);
-			putpixel(xc-y,yc-x,RED);
 			p = p + 2 * ( x - y ) + 1;
 		}
+		putpixel(xc+x,yc+y,RED); //1 oct
+		putpixel(xc+x,yc-y,RED);//8 oct
+		putpixel(xc-x,yc+y,RED);//3 oct
+		putpixel(xc-x,yc-y,RED);//5 oct
+		putpixel(xc+y,yc+x,RED);//2 oct
+		putpixel(xc+y,yc-x,RED);//4 oct
+		putpixel(xc-y,yc+x,RED);//7 oct
+		putpixel(xc-y,yc-x,RED);//6 oct
 	}
 
 }
